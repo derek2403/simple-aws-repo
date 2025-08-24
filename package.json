@@ -1,11 +1,11 @@
 {
-    "name": "student-records",
+    "name": "simple-aws-repo-server",
     "version": "1.0.0",
     "type": "module",
     "scripts": {
       "start": "node src/index.js",
       "dev": "node --watch src/index.js",
-      "init-db": "mysql -h $DB_HOST -u $DB_USER -p$DB_PASSWORD < scripts/init-db.sql"
+      "init-db": "mysql -h $DB_HOST -u $DB_USER -p$DB_PASSWORD $DB_NAME < scripts/init-db.sql"
     },
     "dependencies": {
       "@aws-sdk/client-secrets-manager": "^3.637.0",
